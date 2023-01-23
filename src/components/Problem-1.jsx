@@ -8,7 +8,7 @@ const Problem1 = () => {
     const [user, setUser] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/${show}`)
+        fetch(`https://react-task-server-nine.vercel.app/${show}`)
             .then(res => res.json())
             .then(data => {
 
@@ -19,7 +19,7 @@ const Problem1 = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/info')
+        fetch('https://react-task-server-nine.vercel.app/info')
             .then(res => res.json())
             .then(data => {
 
